@@ -8,6 +8,7 @@ import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 @Path("/customer")
 public class CustomerResource {
@@ -18,9 +19,8 @@ public class CustomerResource {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Transactional
-    public void handleCostumerRequest(Customer customer) {
-//        entityManager.persist(customer);
-//        entityManager.flush();
+    public Response handleCostumerRequest(Customer customer) {
         customerService.customerInsert(customer);
+        return Response.ok().build();
     }
 }
