@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes;target/dependency/* com.example.datalayer.SparklingWaterApplication
+web: java -jar lib/payara-micro-5.2022.1.jar --deploy target/SparklingWater.war --port 8082
