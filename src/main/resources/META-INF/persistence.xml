@@ -10,9 +10,9 @@
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="mysql://b6d2c608395477:3c93e839@us-cdbr-east-05.cleardb.net/heroku_9766490310b99af?reconnect=true"/>
-            <property name="jakarta.persistence.jdbc.user" value="b6d2c608395477"/>
-            <property name="jakarta.persistence.jdbc.password" value="3c93e839"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sparklingwater?allowPublicKeyRetrieval=tru;useSSL=false"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="admin"/>
         </properties>
     </persistence-unit>
 </persistence>
